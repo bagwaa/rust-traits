@@ -1,9 +1,11 @@
+use std::ops::Mul;
+
 struct Square<T> {
     x: T,
     y: T,
 }
 
-impl<T> Square<T> {
+impl<T: Mul> Square<T> {
     fn new(x: T, y: T) -> Square<T> {
         Square { x, y }
     }
