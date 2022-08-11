@@ -22,10 +22,3 @@ fn main() {
         first_square.area()
     );
 }
-
-// How do I remove the i32 here?  I want to use a Generic everywhere
-// If I use a trait T it doesn't understand how to multiply the X and Y properties
-
-// Once we have a generic type running correctly, I then want a trait with the area function inside
-
-// and then implement that trait for a circle and a square
