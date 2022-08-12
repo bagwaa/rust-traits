@@ -38,6 +38,3 @@ fn main() {
     let square = Square::new(10, 12);
     square.log();
 }
-
-// improvements, I would like to be able to pass in any valid positive number into the arguments
-// when creating a square or a circle, casting everything to f64 feels a bit meh
