@@ -27,14 +27,12 @@ impl<T: Display + Mul<Output = T> + Add<Output = T> + Copy> Square<T> {
             self.y,
             self.area()
         );
+
         println!("The parameter of sqaure is {:.2} cm", self.parameter());
     }
 }
 
 fn main() {
-    let square = Square::new(10.1, 10.2);
-    square.log();
-
-    let square = Square::new(10, 12);
-    square.log();
+    (Square::new(10.1, 10.2)).log();
+    (Square::new(10, 12)).log();
 }
